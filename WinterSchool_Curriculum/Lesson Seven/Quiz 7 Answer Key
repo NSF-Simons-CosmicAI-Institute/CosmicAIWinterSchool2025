@@ -1,0 +1,61 @@
+### **Solution Key**
+
+#### **Multiple Choice Answers**
+
+- b) The probability of event A occurring.
+- c) A variable whose value is a numerical outcome of a random phenomenon.
+- b) PMF gives probability for exact values, PDF for intervals.
+- c) P(A) \* P(B)
+- b) The average value of the outcomes weighted by their probabilities.
+- c) Entropy
+- c) Ordinal qualitative data
+- c) Median
+- c) The variables tend to increase or decrease together.
+- b) The hypothesis that there is no effect or no difference.
+- b) It provides strong evidence to reject the null hypothesis.
+- c) The proportion of the variance in the dependent variable that is predictable from the independent variable(s).
+- b) P(B|A) \* P(A) / P(B)
+- b) Type I error
+- b) To define a range within which a population parameter is likely to fall, with a certain level of confidence.
+
+#### **Short Answer Solutions**
+
+- Define a random variable and explain the difference between a discrete and a continuous random variable with an example for each.  
+    A random variable is a numerical outcome of a random phenomenon or experiment. It's a variable whose value is determined by the outcome of a random event.
+  - **Discrete Random Variable:** A random variable that can take on a finite or countably infinite number of distinct values. These values are typically integers and can often be counted.
+    - **Example:** The number of heads when flipping a coin 3 times (possible values: 0, 1, 2, 3).
+  - **Continuous Random Variable:** A random variable that can take on any value within a given range or interval. These values are typically real numbers and can involve decimals.
+    - **Example:** The height of a randomly selected person (e.g., 175.5 cm, 180.12 cm, any value within a range).
+- Explain the concept of conditional probability (P(A|B)) and provide a real-world example to illustrate it.  
+    Conditional probability (P(A|B)) is the probability of an event A occurring, given that another event B has already occurred. It's read as "the probability of A given B." It allows us to update our belief about an event based on new evidence.  
+    The formula is P(A|B) = P(A and B) / P(B), provided P(B) > 0.
+  - Real-world Example:  
+        Let A = "It will rain tomorrow"  
+        Let B = "The sky is cloudy right now"  
+        P(Rain tomorrow | Sky is cloudy right now): This is the probability that it will rain tomorrow, given that we observe a cloudy sky today. This probability is likely higher than the general probability of rain tomorrow without considering the cloudiness.
+- Describe the three main measures of central tendency (mean, median, mode) and provide a scenario where the median would be a more appropriate measure than the mean.  
+    The three main measures of central tendency are:
+  - **Mean:** The arithmetic average of all values in a dataset. It's calculated by summing all values and dividing by the number of values.
+  - **Median:** The middle value in a dataset when the values are arranged in ascending or descending order. If there's an even number of values, it's the average of the two middle values.
+  - **Mode:** The value that appears most frequently in a dataset. A dataset can have one mode, multiple modes, or no mode.
+- Scenario where median is more appropriate than the mean:  
+    Consider a dataset of household incomes in a neighborhood. If there are a few extremely wealthy individuals (outliers) living among many average-income households, the mean income would be heavily skewed upwards by these high incomes, giving a misleading impression of the "typical" income in the neighborhood. In such a case, the median income would be a more appropriate measure of central tendency because it represents the income of the middle household, and it is not as affected by extreme values.
+- What is hypothesis testing? Briefly explain the roles of the null hypothesis (H0), the alternative hypothesis (H1), and the p-value in deciding whether to reject or fail to reject H0.  
+    Hypothesis testing is a statistical method used to make decisions or inferences about a population based on sample data. It involves formulating hypotheses, collecting data, and then using statistical tests to determine if there is enough evidence to support or reject a claim about the population.
+  - **Null Hypothesis (H0):** This is a statement of no effect, no difference, or no relationship. It's the default assumption that we try to find evidence against. For example, H0: There is no difference in average test scores between two groups.
+  - **Alternative Hypothesis (H1):** This is the statement that contradicts the null hypothesis. It represents what the researcher is trying to find evidence for. For example, H1: There is a difference in average test scores between two groups.
+  - **P-value:** The p-value is the probability of observing a test statistic as extreme as, or more extreme than, the one calculated from the sample data, _assuming that the null hypothesis is true_.
+    - **Decision Rule:**
+      - If **p-value < significance level** (e.g., 0.05), we **reject the null hypothesis** (H0). This means the observed data is unlikely if H0 were true, so we conclude there's enough evidence to support H1.
+      - If **p-value ≥ significance level**, we **fail to reject the null hypothesis** (H0). This means the observed data is not unusual under H0, so we don't have enough evidence to support H1.
+- State Bayes' Theorem. Explain its components and provide a simple interpretation of what it helps calculate.  
+    Bayes' Theorem is a formula that describes how to update the probability of an event based on new evidence.  
+    Theorem:  
+    P(A|B) = \[P(B|A) \* P(A)\] / P(B)  
+    **Components:**
+  - P(A|B): **Posterior Probability** - The probability of event A occurring given that event B has occurred. This is what we want to calculate.
+  - P(B|A): **Likelihood** - The probability of event B occurring given that event A has occurred.
+  - P(A): **Prior Probability** - The initial probability of event A occurring before considering any new evidence from event B.
+  - P(B): **Marginal Probability (or Evidence)** - The overall probability of event B occurring.
+- Interpretation:  
+    Bayes' Theorem helps us calculate the updated probability of a hypothesis (A) being true, given new evidence (B). It essentially tells us how our initial belief about A (P(A)) should change after observing B. It's a fundamental concept in Bayesian statistics and machine learning, used for tasks like spam filtering, medical diagnosis, and predictive modeling where we need to infer the probability of an event given some observed data.

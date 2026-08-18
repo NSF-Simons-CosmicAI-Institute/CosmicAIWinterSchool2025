@@ -1,0 +1,112 @@
+## Lesson 3: Pandas, NumPy, and Linear Algebra Concepts Quiz
+
+Multiple Choice Questions
+
+- Which of the following is a 1-dimensional labeled array in Pandas?  
+    a) DataFrame  
+    b) Series  
+    c) Array  
+    d) List
+- The sum of the diagonal elements of a square matrix is known as its:  
+    a) Determinant.  
+    b) Inverse.  
+    c) Trace.  
+    d) Rank.
+- A Pandas DataFrame is best described as a:  
+    a) 1D array.  
+    b) 2D labeled data structure with columns that can be of different types.  
+    c) Collection of key-value pairs.  
+    d) Single row of data.
+- Which method is commonly used to load data from a CSV file into a Pandas DataFrame?  
+    a) pd.load_csv()  
+    b) pd.read_csv()  
+    c) pd.get_csv()  
+    d) pd.import_csv()
+- What does the .head() method typically display when applied to a Pandas DataFrame?  
+    a) The last 5 rows of the DataFrame.  
+    b) The first 5 rows of the DataFrame.  
+    c) A summary of the DataFrame's columns.  
+    d) The data types of each column.
+- Which of the following operations is a common use case for Pandas' data manipulation capabilities?  
+    a) Performing complex mathematical simulations.  
+    b) Handling missing or inconsistent values in data.  
+    c) Developing graphical user interfaces.  
+    d) Creating animated visualizations.
+- What is NumPy primarily known for in the Python data ecosystem?  
+    a) Creating interactive web applications.  
+    b) Efficiently creating, manipulating, and performing operations on arrays.  
+    c) Managing databases.  
+    d) Natural Language Processing.
+- What is the core data structure in NumPy?  
+    a) Series  
+    b) DataFrame  
+    c) ndarray  
+    d) Dictionary
+- Which of the following is an advantage of using NumPy arrays over Python lists for numerical operations?  
+    a) NumPy arrays can store elements of different data types, unlike lists.  
+    b) NumPy operations are generally slower than list operations for large datasets.  
+    c) NumPy arrays are more memory-efficient and faster for numerical computations.  
+    d) Python lists support more mathematical functions directly.
+- What is an "affine transformation" in the context of linear algebra?  
+    a) A transformation that always passes through the origin.  
+    b) A linear transformation followed by a translation (shift).  
+    c) A transformation that only involves scaling.  
+    d) A transformation that only involves rotation.
+- What is "broadcasting" in NumPy?  
+    a) A method for combining arrays of the same shape.  
+    b) A mechanism for performing operations on arrays of different shapes.  
+    c) A way to print array elements to the console.  
+    d) A function for converting arrays to lists.
+- Which NumPy function is used to create an array filled with zeros?  
+    a) np.empty()  
+    b) np.one()  
+    c) np.zeros()  
+    d) np.fill_zeros()
+- What is an "eigenvector" in linear algebra?  
+    a) A vector that, when multiplied by a matrix, changes its direction significantly.  
+    b) A vector whose direction remains unchanged when a linear transformation is applied to it, only scaled by an eigenvalue.  
+    c) A scalar value that defines the magnitude of a matrix.  
+    d) The inverse of a matrix.
+- What does "eigendecomposition" involve?  
+    a) Breaking down a vector into its component parts.  
+    b) Decomposing a matrix into a set of eigenvectors and eigenvalues.  
+    c) Multiplying two matrices together.  
+    d) Calculating the determinant of a matrix.
+- Which of the following is a key application of eigendecomposition in machine learning?  
+    a) Simple arithmetic operations.  
+    b) Principal Component Analysis (PCA).  
+    c) Basic data visualization.  
+    d) String manipulation.
+- What is the purpose of the "determinant" of a matrix?  
+    a) It indicates the number of rows in the matrix.  
+    b) It determines if a matrix has an inverse and represents the scaling factor of the linear transformation.  
+    c) It specifies the data type of the matrix elements.  
+    d) It is used to transpose a matrix.
+- What is Singular Value Decomposition (SVD)?  
+    a) A method to calculate the sum of matrix elements.  
+    b) A powerful matrix factorization technique with applications in dimensionality reduction and data compression.  
+    c) A process of adding two vectors.  
+    d) An operation to find the maximum value in a matrix.
+- The "Moore-Penrose Pseudoinverse" is particularly useful for what kind of matrices?  
+    a) Square matrices only.  
+    b) Invertible matrices only.  
+    c) Non-square or singular matrices that do not have a traditional inverse.  
+    d) Identity matrices.
+- What does the "Trace Operator" of a square matrix calculate?  
+    a) The product of its diagonal elements.  
+    b) The sum of its diagonal elements.  
+    c) The maximum value in the matrix.  
+    d) The number of non-zero elements.
+- Principal Component Analysis (PCA) is an example of a machine learning algorithm used for:  
+    a) Classification.  
+    b) Regression.  
+    c) Dimensionality reduction.  
+    d) Clustering.
+
+Short Answer Questions
+
+- Describe the key differences and typical use cases for Pandas Series and Pandas DataFrames.
+- Explain the concept of "Data Manipulation" in Pandas and provide two examples of common data manipulation tasks.
+- What are Universal Functions (UFuncs) in NumPy, and why are they important for efficient numerical computations?
+- Briefly explain what an "eigenvalue" is in relation to an eigenvector and how it's used in linear transformations.
+- How is Principal Component Analysis (PCA) related to eigendecomposition or Singular Value Decomposition (SVD)?

@@ -1,0 +1,19 @@
+### **Solution Key**
+
+#### **Multiple Choice Answers**
+
+- b) A block of code with an associated name that receives input, follows statements, and returns a value or completes a task.
+- c) def
+- b) Modularization and code reuse.
+- c) A colon (:)
+- c) Indented.
+- b) Only when the function is called.
+- c) To send a value back to the caller of the function.
+- c) None
+- b) The values that are passed into the function when it is called.
+- b) The variables listed inside the parentheses in the function's def statement.
+- b) It allows a complex program to be broken down into smaller, simpler, and manageable parts.
+- c) Using the same function multiple times in different parts of a program or in different programs.
+- b) They contain the arguments being passed to the function.
+- c) A parameter.
+- b) A special attribute that stores metadata about function parameters and return values.

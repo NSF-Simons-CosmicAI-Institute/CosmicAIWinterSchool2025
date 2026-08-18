@@ -1,0 +1,79 @@
+## Lesson 5: Functions - Quiz
+
+### Multiple Choice Questions
+
+- What is a function in Python?  
+    a) A type of variable that stores a single value.  
+    b) A block of code with an associated name that receives input, follows statements, and returns a value or completes a task.  
+    c) A data structure used to store multiple items.  
+    d) A conditional statement used for decision-making.
+- Which keyword is used to define a function in Python?  
+    a) function  
+    b) define  
+    c) def  
+    d) func
+- What are the main advantages of using functions in programming, as mentioned in the notebook?  
+    a) Faster program execution and reduced memory usage.  
+    b) Modularization and code reuse.  
+    c) Automatic error correction and debugging.  
+    d) Simplified variable declaration and assignment.
+- When defining a function, what must follow the function name and its parameters (if any)?  
+    a) A semicolon (;)  
+    b) An equals sign (=)  
+    c) A colon (:)  
+    d) A comma (,)
+- The code block belonging to a function must be:  
+    a) Enclosed in curly braces {}.  
+    b) Preceded by a pass statement.  
+    c) Indented.  
+    d) Followed by an end keyword.
+- How is the body of a Python function executed?  
+    a) Immediately when the function is defined.  
+    b) Only when the function is called.  
+    c) When the program finishes execution.  
+    d) When a special run command is issued.
+- What is the purpose of the return statement in a function?  
+    a) To stop the program execution entirely.  
+    b) To print a message to the console.  
+    c) To send a value back to the caller of the function.  
+    d) To define a new variable inside the function.
+- If a function does not have a return statement, what value does it implicitly return?  
+    a) 0  
+    b) True  
+    c) None  
+    d) An empty string ""
+- What are "arguments" in the context of functions?  
+    a) The names of the variables defined inside the function.  
+    b) The values that are passed into the function when it is called.  
+    c) The results returned by the function.  
+    d) The errors or exceptions raised by the function.
+- What are "parameters" in a function definition?  
+    a) The values returned by the function.  
+    b) The variables listed inside the parentheses in the function's def statement.  
+    c) The name of the function itself.  
+    d) The lines of code within the function body.
+- What is "modularization" as an advantage of using functions?  
+    a) It makes the code run faster.  
+    b) It allows a complex program to be broken down into smaller, simpler, and manageable parts.  
+    c) It automatically handles all input and output operations.  
+    d) It adds security to the program.
+- What is "code reuse" as an advantage of using functions?  
+    a) Writing the same code multiple times in different parts of the program.  
+    b) Copying and pasting code segments frequently.  
+    c) Using the same function multiple times in different parts of a program or in different programs.  
+    d) Reversing the order of code execution.
+- What is the role of the parentheses () after a function name when it's being called?  
+    a) They indicate the end of the function definition.  
+    b) They contain the arguments being passed to the function.  
+    c) They mark the function as a built-in function.  
+    d) They are optional and can be omitted.
+- Consider the function definition: def greet(name):. What does name represent in this context?  
+    a) A local variable initialized inside the function.  
+    b) A global variable.  
+    c) A parameter.  
+    d) The return value of the function.
+- What is \__annotations_\_?  
+    a) A built-in function that describes the purpose of a function.  
+    b) A special attribute that stores metadata about function parameters and return values.  
+    c) A mandatory keyword for all function definitions.  
+    d) The name given to a function that performs mathematical operations.

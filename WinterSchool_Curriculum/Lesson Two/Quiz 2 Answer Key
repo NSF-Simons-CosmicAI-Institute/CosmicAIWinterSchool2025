@@ -1,0 +1,85 @@
+**Solution Key**
+
+#### **Multiple Choice Answers**
+
+- b) open()
+- c) 'r'
+- c) 'w'
+- b) 'a'
+- c) read()
+- b) To remove leading and trailing whitespace characters (like newlines or spaces).
+- b) It automatically closes the file, even if errors occur, ensuring resource management.
+- c) It splits the string into a list of substrings, using the comma as a delimiter.
+- b) Storing spreadsheet and database data.
+- c) .FITS files
+- c) FITS files
+- b) Using fits.open().
+- b) A list of header/data units (HDUs), each containing an image or table.
+- b) hdul\[0\].data
+- b) A summary of the HDUs within the FITS file, including their type, dimensions, and data format.
+
+#### **Short Answer Solutions**
+
+- **Explain the difference between file.readline() and file.readlines() when reading content from a text file. When would you use each?**
+  - **file.readline():** This method reads only _one line_ from the file at a time. Each subsequent call to readline() returns the next line, including the newline character (\\n) at the end of the line. It's useful for processing files line by line, especially for very large files that might not fit entirely into memory, or when you need to handle specific lines differently based on their content.
+  - **file.readlines():** This method reads _all lines_ from the file and returns them as a list of strings, where each string in the list represents a line from the file (including the newline character). It's suitable for smaller files where you need to load all content into memory for subsequent processing, such as searching or parsing the entire file.
+- Describe the purpose of using the with open(...) as f: statement for file handling in Python. What advantage does it offer over manually calling f.close()?  
+    The with open(...) as f: statement is a context manager for file handling in Python. Its primary purpose is to ensure that a file is properly closed after its block of code is executed, regardless of whether the code runs successfully or encounters an error.  
+    The main advantage it offers over manually calling f.close() is that it guarantees the file will be closed automatically. If you open a file manually and forget to call f.close() or if an error occurs before f.close() is reached, the file might remain open, leading to resource leaks, data corruption, or "permission denied" errors in subsequent operations. The with statement handles these scenarios gracefully, making code more robust and preventing common file-handling issues.
+- What is a CSV file, and why is it a common format for data exchange? How would you typically read a CSV file line by line in Python, assuming it uses commas as delimiters?  
+    A CSV (Comma Separated Values) file is a plain text file that uses commas to separate values. Each line in the file represents a row of data, and the values within that row are separated by commas.  
+    It is a common format for data exchange because:
+  - **Simplicity:** It's human-readable and easy to understand.
+  - **Compatibility:** Most spreadsheet software (like Excel, Google Sheets) and databases can easily import and export data in CSV format.
+  - Lightweight: It's a relatively small file size compared to other structured data formats.  
+        To typically read a CSV file line by line in Python, you can open the file in read mode and iterate through its lines. Then, you use the .split(',') method on each line to separate the values. It's also good practice to use .strip() to remove the newline character from the end of each line.  
+        Example:
+- Python
+
+with open('my_data.csv', 'r') as file:
+
+for line in file:
+
+data_fields = line.strip().split(',')
+
+print(data_fields)
+
+- For more robust CSV parsing, especially with quoted fields or different delimiters, the built-in csv module is recommended.
+- What are .FITS files primarily used for, and what Python library is specifically designed to work with them?  
+    .FITS (Flexible Image Transport System) files are primarily used in astronomy and astrophysics for storing and exchanging scientific data, particularly images and tabular data (like catalogs). They are designed to be self-describing, meaning they contain both the data and metadata (header information) about that data.  
+    The Python library specifically designed to work with .FITS files is astropy.io.fits, which is part of the larger Astropy project.
+- Describe the general steps involved in opening a .FITS file using the astropy.io.fits library and accessing its data (e.g., an image or a table).  
+    The general steps to open a .FITS file and access its data using astropy.io.fits are:
+  - **Import the necessary module:** You typically start by importing fits from astropy.io:
+  - Python
+
+from astropy.io import fits
+
+- 1. **Open the .FITS file:** Use fits.open() to open the file. This returns an HDUList object, which is a list of Header/Data Units (HDUs) within the FITS file. Each HDU can contain either image data or tabular data along with its header. It's best practice to use a with statement to ensure the file is closed properly.
+  - Python
+
+with fits.open('your_fits_file.fits') as hdul:
+
+\# ... process data ...
+
+- 1. **Inspect the HDUList (Optional but Recommended):** You can use hdul.info() to get a summary of the HDUs present in the file, which helps in identifying where the data of interest (e.g., primary image, extension tables) is located.
+  - Python
+
+hdul.info()
+
+- 1. **Access Data:**
+        - **Primary Data (often an image):** The primary HDU is usually at index 0. You access its data using .data.
+        - Python
+
+image_data = hdul\[0\].data
+
+- - - **Table Data (from extensions):** If the FITS file contains tables (Binary Tables or ASCII Tables), they will be in subsequent HDUs (e.g., hdul\[1\], hdul\[2\]). You can access table data, including individual columns, using their names or indices.
+      - Python
+
+table_data = hdul\[1\].data
+
+\# Access a specific column from the table
+
+column_values = table_data\['ColumnName'\]
+
+- 1. **Close the file:** If not using the with statement, you must explicitly close the HDUList object using hdul.close() to release system resources. The with statement handles this automatically.

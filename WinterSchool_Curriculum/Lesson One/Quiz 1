@@ -1,0 +1,81 @@
+## **Lesson 1: Python Basics Quiz**
+
+Lesson 1: Python Basics, Operators, and Conditional Statements
+
+**Multiple Choice Questions**
+
+- What is a variable in Python?  
+    a) A fixed value that cannot be changed.  
+    b) A keyword in Python.  
+    c) A name given to a value used to store data in a program.  
+    d) A type of operator.
+- How do you assign a value to a variable in Python?  
+    a) Using the == sign.  
+    b) Using the = sign.  
+    c) Using the != sign.  
+    d) Using the -> sign.
+- Are variable names in Python case-sensitive?  
+    a) No, they are not case-sensitive.  
+    b) Yes, they are case-sensitive.  
+    c) Only for numeric variables.  
+    d) Only for string variables.
+- Which of the following is a valid first character for a variable name in Python?  
+    a) A digit (e.g., 1_variable)  
+    b) An uppercase letter (e.g., Variable)  
+    c) A special symbol (e.g., @variable)  
+    d) A space (e.g., my variable)
+- What are comments used for in Python code?  
+    a) To execute specific blocks of code.  
+    b) To describe what the code is doing.  
+    c) To declare new variables.  
+    d) To define functions.
+- Which symbol is used to denote a single-line comment in Python?  
+    a) //  
+    b) /\* \*/  
+    c) #  
+    d) \`\`
+- What is the purpose of the type() function in Python?  
+    a) To convert a variable to a different data type.  
+    b) To print the value of a variable.  
+    c) To check the data type of a variable.  
+    d) To assign a type to a variable.
+- Which of the following is a mutable data type in Python?  
+    a) Tuples  
+    b) Strings  
+    c) Lists  
+    d) Integers
+- What does the term "mutable" mean in the context of data types?  
+    a) The value cannot be changed after creation.  
+    b) The value can be changed after creation.  
+    c) The data type is a number.  
+    d) The data type is a sequence of characters.
+- What is an operator in Python?  
+    a) A function that performs a specific task.  
+    b) A symbol that performs an operation on one or more operands.  
+    c) A reserved keyword.  
+    d) A variable declaration.
+- Which operator is used for addition in Python?  
+    a) -  
+    b) \*  
+    c) +  
+    d) /
+- What is the result of 10 **%** 3 in Python?  
+    a) 3  
+    b) 1  
+    c) 0  
+    d) 3.33
+- Which of the following logical operators means "both conditions must be true"?  
+    a) or  
+    b) not  
+    c) and  
+    d) xor
+- What is the purpose of conditional statements (e.g., if, elif, else) in Python?  
+    a) To define new functions.  
+    b) To repeat a block of code multiple times.  
+    c) To execute different blocks of code based on whether a condition is true or false.  
+    d) To declare variables.
+- Which block of code will execute if the if and elif conditions are both False?  
+    a) The if block.  
+    b) The elif block.  
+    c) The else block.  
+    d) None of the above.

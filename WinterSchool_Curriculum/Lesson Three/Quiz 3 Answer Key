@@ -1,0 +1,47 @@
+Solution Key
+
+Multiple Choice Answers
+
+- b) Data analysis and manipulation.
+- c) Trace
+- b) 2D labeled data structure with columns that can be of different types.
+- b) pd.read_csv()
+- b) The first 5 rows of the DataFrame.
+- b) Handling missing or inconsistent values in data.
+- b) Efficiently creating, manipulating, and performing operations on arrays.
+- c) ndarray
+- c) NumPy arrays are more memory-efficient and faster for numerical computations.
+- b) A linear transformation followed by a translation (shift).
+- b) A mechanism for performing operations on arrays of different shapes.
+- c) np.zeros()
+- b) A vector whose direction remains unchanged when a linear transformation is applied to it, only scaled by an eigenvalue.
+- b) Decomposing a matrix into a set of eigenvectors and eigenvalues.
+- b) Principal Component Analysis (PCA).
+- b) It determines if a matrix has an inverse and represents the scaling factor of the linear transformation.
+- b) A powerful matrix factorization technique with applications in dimensionality reduction and data compression.
+- c) Non-square or singular matrices that do not have a traditional inverse.
+- b) The sum of its diagonal elements.
+- c) Dimensionality reduction.
+
+Short Answer Solutions
+
+- Describe the key differences and typical use cases for Pandas Series and Pandas DataFrames.
+  - Pandas Series: A Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floats, Python objects, etc.). It's like a single column of a spreadsheet or a SQL table. Typical use cases include representing a single feature or variable, such as a list of temperatures or a sequence of product names.
+  - Pandas DataFrame: A DataFrame is a two-dimensional labeled data structure with columns that can be of different types. It's like a spreadsheet or a SQL table, or a dictionary of Series objects. Typical use cases include storing and manipulating tabular data, such as entire datasets from CSV files, Excel sheets, or databases, where each column can represent a different variable and each row an observation.
+- Explain the concept of "Data Manipulation" in Pandas and provide two examples of common data manipulation tasks.  
+    "Data Manipulation" in Pandas refers to the process of transforming and cleaning raw data to make it suitable for analysis or modeling. It involves various operations to modify, rearrange, and refine data within Series and DataFrames.  
+    Two examples of common data manipulation tasks are:
+  - Handling missing or inconsistent values: This involves identifying missing data (e.g., NaN values) and deciding how to deal with them, such as filling them with a specific value (e.g., the mean or median of the column) or dropping rows/columns that contain them.
+  - Selecting, filtering, and transforming columns and rows: This includes operations like selecting specific columns, filtering rows based on certain conditions, creating new columns based on existing ones, or applying functions to transform data within a column.
+- What are Universal Functions (UFuncs) in NumPy, and why are they important for efficient numerical computations?  
+    Universal Functions (UFuncs) in NumPy are functions that operate element-by-element on ndarray objects. They are "universal" in the sense that they can operate on arrays of various shapes and dimensions, and they automatically handle broadcasting.  
+    UFuncs are important for efficient numerical computations because they are implemented in C and optimized for speed. This allows NumPy to perform operations on entire arrays much faster than equivalent operations performed element-by-element using Python's native loops. This vectorized operation significantly improves performance, especially with large datasets, making NumPy a cornerstone for scientific computing in Python.
+- Briefly explain what an "eigenvalue" is in relation to an eigenvector and how it's used in linear transformations.  
+    In linear algebra, an eigenvector is a non-zero vector that, when a linear transformation (represented by a matrix) is applied to it, only changes in magnitude (is scaled), but not in direction.  
+    An eigenvalue is the scalar factor by which the eigenvector is scaled during this linear transformation. In simpler terms, it tells you "how much" the eigenvector is stretched or compressed. For a given matrix A and an eigenvector v, the relationship is expressed as Av=λv, where λ (lambda) is the eigenvalue.  
+    Eigenvalues are crucial because they describe the magnitude of the transformation along the direction of the eigenvectors. In applications like PCA, larger eigenvalues correspond to eigenvectors that capture more variance in the data, indicating more important directions.
+- How is Principal Component Analysis (PCA) related to eigendecomposition or Singular Value Decomposition (SVD)?  
+    Principal Component Analysis (PCA) is a dimensionality reduction technique that is fundamentally based on either eigendecomposition or Singular Value Decomposition (SVD).
+  - Using Eigendecomposition: When performing PCA, one common approach is to calculate the covariance matrix of the data. The eigenvectors of this covariance matrix represent the principal components (the new orthogonal directions of maximum variance), and their corresponding eigenvalues indicate the amount of variance captured along each principal component. PCA essentially finds these eigenvectors and eigenvalues to transform the data into a new coordinate system where the axes are the principal components.
+  - Using Singular Value Decomposition (SVD): SVD is another robust and often preferred method for PCA, especially when dealing with large or sparse datasets, or when the covariance matrix is singular. SVD directly decomposes the data matrix into three matrices, from which the principal components and their variances can be derived. The singular values obtained from SVD are related to the square roots of the eigenvalues of the covariance matrix. SVD is generally more numerically stable than direct eigendecomposition of the covariance matrix.  
+        In essence, both eigendecomposition and SVD provide the mathematical tools to find the directions (principal components) and magnitudes (variance explained) that PCA uses to reduce the dimensionality of the data while retaining as much variance as possible.

@@ -1,0 +1,106 @@
+Lesson 4 : Data Cleaning, Merging, and Visualization in Python
+
+Multiple Choice (choose one correct answer)
+
+- **What is the purpose of data cleaning in data science workflows?  
+    **A. To visualize the data  
+    B. To introduce missing values  
+    C. To remove or fix inaccurate, inconsistent, or irrelevant data  
+    D. To build machine learning models  
+
+- **Which method is used to drop missing values from a DataFrame?  
+    **A. drop_duplicates()  
+    B. dropna()  
+    C. fillna()  
+    D. remove_null()  
+
+- **What does the .str accessor in Pandas allow you to do?  
+    **A. Apply numeric operations  
+    B. Apply string methods to Series elements  
+    C. Sort the index  
+    D. Merge two datasets  
+
+- **Which function applies a function element-wise to a DataFrame?  
+    **A. apply()  
+    B. map()  
+    C. applymap()  
+    D. filter()  
+
+- **Which of the following is used to rename columns in a DataFrame?  
+    **A. df.columns()  
+    B. df.rename()  
+    C. df.rename_columns()  
+    D. df.edit_columns()  
+
+- **Which method is used to combine DataFrames based on a common key?  
+    **A. merge()  
+    B. concat()  
+    C. groupby()  
+    D. sort_values()  
+
+- **When using pd.merge(), which argument specifies the key column?  
+    **A. left  
+    B. right  
+    C. on  
+    D. index  
+
+- **Which of these is NOT a valid merge method in Pandas?  
+    **A. inner  
+    B. outer  
+    C. cross  
+    D. between  
+
+- **What is the default join method when using pd.merge()?  
+    **A. outer  
+    B. left  
+    C. right  
+    D. inner  
+
+- **Which Matplotlib function is typically used to create line plots?  
+    **A. plt.line()  
+    B. plt.plot()  
+    C. plt.graph()  
+    D. plt.lines()  
+
+- **What is the purpose of plt.style.use() in Matplotlib?  
+    **A. Change the data type  
+    B. Define figure size  
+    C. Set the visual style of plots  
+    D. Export the figure  
+
+- **Which part of a plot contains the actual plotting area in Matplotlib?  
+    **A. Figure  
+    B. Axes  
+    C. Label  
+    D. Grid  
+
+- **Which import statement is used to access Matplotlib's pyplot module?  
+    **A. import matplotlib.plot as plt  
+    B. import pyplot as mpl  
+    C. import matplotlib.pyplot as plt  
+    D. from matplotlib import pyplot as graph  
+
+- **Which Pandas method reads in .csv files?  
+    **A. pd.load_csv()  
+    B. pd.read_csv()  
+    C. pd.import_csv()  
+    D. pd.open_csv()  
+
+- **Which function can skip unnecessary rows while loading a CSV?  
+    **A. skip_empty()  
+    B. skip_blank_lines=True  
+    C. skiprows  
+    D. drop_rows  
+
+### Short Answer
+
+- **Explain the difference between apply() and applymap() in Pandas.  
+    **
+- **What is a key reason for renaming columns in a DataFrame before merging?  
+    **
+- **Why is it useful to visualize data before analysis?  
+    **
+- **Describe what happens during an 'outer' merge in Pandas.  
+    **
+- **What role does the 'index' play in a DataFrame, and when might you want to reset it?  
+    **

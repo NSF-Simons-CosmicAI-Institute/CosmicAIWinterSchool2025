@@ -1,0 +1,87 @@
+## **Lesson 2: Opening and Manipulating Data Quiz**
+
+## **Multiple Choice Questions**
+
+- What is the primary Python function used to open a file?  
+    a) read_file()  
+    b) open()  
+    c) load_file()  
+    d) file_open()
+- Which mode for the open() function is used to open a file for reading?  
+    a) 'w'  
+    b) 'a'  
+    c) 'r'  
+    d) 'x'
+- Which mode for the open() function will overwrite an existing file or create a new one if it doesn't exist?  
+    a) 'r'  
+    b) 'a'  
+    c) 'w'  
+    d) 'x'
+- To add content to the end of an existing file without deleting its current contents, which mode should be used with open()?  
+    a) 'w'  
+    b) 'a'  
+    c) 'r'  
+    d) 'x'
+- Which method is used to read the entire content of a file as a single string?  
+    a) readline()  
+    b) readlines()  
+    c) read()  
+    d) readall()
+- What is the purpose of the .strip() method when processing text data from files?  
+    a) To convert the string to uppercase.  
+    b) To remove leading and trailing whitespace characters (like newlines or spaces).  
+    c) To split the string into a list of words.  
+    d) To count the number of characters in the string.
+- What is the benefit of using with open(...) as f: when handling files?  
+    a) It automatically converts file content to a specific data type.  
+    b) It automatically closes the file, even if errors occur, ensuring resource management.  
+    c) It makes file reading significantly faster.  
+    d) It prevents any data from being written to the file.
+- What does the line.split(',') method do when applied to a string read from a file?  
+    a) It joins the string with commas.  
+    b) It removes all commas from the string.  
+    c) It splits the string into a list of substrings, using the comma as a delimiter.  
+    d) It counts the number of commas in the string.
+- The CSV (Comma Separated Values) format is commonly used for:  
+    a) Storing image data.  
+    b) Storing spreadsheet and database data.  
+    c) Storing binary executable files.  
+    d) Storing encrypted information.
+- What type of files are specifically mentioned in Lesson 2 as being suitable for astronomical data, often containing tabular data?  
+    a) .txt files  
+    b) .csv files  
+    c) .FITS files  
+    d) .json files
+- The Python library astropy.io.fits is specifically designed for working with which file type?  
+    a) CSV files  
+    b) Text files  
+    c) FITS files  
+    d) Excel files
+- When working with .FITS files using astropy.io.fits, what is a common initial step to open and access data from a FITS file?  
+    a) Using Python's built-in open() function.  
+    b) Using fits.open().  
+    c) Using pd.read_fits().  
+    d) Using np.load_fits().
+- What is contained within an HDUList object when a .FITS file is opened with astropy.io.fits?  
+    a) A single image.  
+    b) A list of header/data units (HDUs), each containing an image or table.  
+    c) Only the metadata of the file.  
+    d) A concatenated string of all file contents.
+- How would you access the primary data (often an image) from an opened FITS file object (e.g., hdul)?  
+    a) hdul.info()  
+    b) hdul\[0\].data  
+    c) hdul.read_data()  
+    d) hdul.get_image()
+- What does the .info() method provide when called on an HDUList object from a FITS file?  
+    a) The actual numerical data from the file.  
+    b) A summary of the HDUs within the FITS file, including their type, dimensions, and data format.  
+    c) The file path of the FITS file.  
+    d) The checksum of the file.
+
+### **Short Answer Questions**
+
+- Explain the difference between file.readline() and file.readlines() when reading content from a text file. When would you use each?
+- Describe the purpose of using the with open(...) as f: statement for file handling in Python. What advantage does it offer over manually calling f.close()?
+- What is a CSV file, and why is it a common format for data exchange? How would you typically read a CSV file line by line in Python, assuming it uses commas as delimiters?
+- What are .FITS files primarily used for, and what Python library is specifically designed to work with them?
+- Describe the general steps involved in opening a .FITS file using the astropy.io.fits library and accessing its data (e.g., an image or a table).

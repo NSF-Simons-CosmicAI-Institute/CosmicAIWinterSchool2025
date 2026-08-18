@@ -1,0 +1,45 @@
+## **Answer Key**
+
+### **Multiple Choice**
+
+- C  
+
+- B  
+
+- B  
+
+- C  
+
+- B  
+
+- A  
+
+- C  
+
+- D  
+
+- D  
+
+- B  
+
+- C  
+
+- B  
+
+- C  
+
+- B  
+
+- C  
+
+### **Short Answer (sample answers)**
+
+- apply() is used to apply a function along a particular axis (rows or columns) of a DataFrame, whereas applymap() applies a function to every element in a DataFrame (element-wise).  
+
+- Renaming ensures consistent column names across datasets, which is critical for accurate merging.  
+
+- Visualizing data helps identify trends, patterns, and potential issues such as outliers or missing values.  
+
+- An outer merge returns all records from both datasets, filling in NaNs where there are no matches.  
+
+- The index is a label-based identifier for rows; resetting it is useful when the index is no longer meaningful or after filtering.

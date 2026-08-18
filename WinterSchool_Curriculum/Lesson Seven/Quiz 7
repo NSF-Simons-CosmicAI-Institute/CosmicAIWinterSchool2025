@@ -1,0 +1,91 @@
+## Lesson 7: Probability and Statistics Quiz
+
+### Multiple Choice Questions
+
+- In probability, what does P(A) represent?  
+    a) The value of event A.  
+    b) The probability of event A occurring.  
+    c) The frequency of event A.  
+    d) The inverse of event A.
+- A random variable is defined as:  
+    a) A variable whose value is always known.  
+    b) A variable that can only take integer values.  
+    c) A variable whose value is a numerical outcome of a random phenomenon.  
+    d) A variable that is constant throughout an experiment.
+- What is the primary difference between a Probability Mass Function (PMF) and a Probability Density Function (PDF)?  
+    a) PMF is for continuous variables, PDF for discrete variables.  
+    b) PMF gives probability for exact values, PDF for intervals.  
+    c) PMF uses sums, PDF uses products.  
+    d) PMF is always positive, PDF can be negative.
+- If events A and B are independent, then P(A and B) is equal to:  
+    a) P(A) + P(B)  
+    b) P(A) / P(B)  
+    c) P(A) \* P(B)  
+    d) P(A) - P(B)
+- What does the expected value (or mean) of a random variable represent?  
+    a) The most frequent outcome.  
+    b) The average value of the outcomes weighted by their probabilities.  
+    c) The spread of the outcomes.  
+    d) The square root of the variance.
+- Which concept quantifies the average amount of information produced by a random variable, or the amount of uncertainty about its outcome?  
+    a) Variance  
+    b) Covariance  
+    c) Entropy  
+    d) Expected Value
+- What type of data includes categories with a natural ordering, such as "low," "medium," and "high"?  
+    a) Nominal qualitative data  
+    b) Discrete quantitative data  
+    c) Ordinal qualitative data  
+    d) Continuous quantitative data
+- Which measure of central tendency is least affected by extreme outliers in a dataset?  
+    a) Mean  
+    b) Mode  
+    c) Median  
+    d) Range
+- What does a high positive covariance between two variables indicate?  
+    a) The variables tend to move in opposite directions.  
+    b) The variables are unrelated.  
+    c) The variables tend to increase or decrease together.  
+    d) One variable causes the other.
+- In hypothesis testing, what is the null hypothesis (H0)?  
+    a) The hypothesis that the researcher is trying to prove.  
+    b) The hypothesis that there is no effect or no difference.  
+    c) The hypothesis that states a significant relationship exists.  
+    d) The hypothesis that is always accepted.
+- What is the significance of a p-value less than a chosen significance level (e.g., 0.05) in hypothesis testing?  
+    a) It means the null hypothesis is definitely true.  
+    b) It provides strong evidence to reject the null hypothesis.  
+    c) It indicates a Type I error has occurred.  
+    d) It means the alternative hypothesis is definitely false.
+- What does R-squared (R²) measure in the context of linear regression?  
+    a) The slope of the regression line.  
+    b) The spread of the residuals.  
+    c) The proportion of the variance in the dependent variable that is predictable from the independent variable(s).  
+    d) The intercept of the regression line.
+- According to Bayes' Theorem, P(A|B) is equal to:  
+    a) P(B|A) \* P(A)  
+    b) P(B|A) \* P(A) / P(B)  
+    c) P(A) \* P(B)  
+    d) P(A) / P(B)
+- Which statistical error occurs when you incorrectly reject a true null hypothesis?  
+    a) Type II error  
+    b) Type I error  
+    c) Standard error  
+    d) Measurement error
+- What is the purpose of a confidence interval?  
+    a) To give a single-point estimate of a population parameter.  
+    b) To define a range within which a population parameter is likely to fall, with a certain level of confidence.  
+    c) To prove that a hypothesis is absolutely true.  
+    d) To measure the correlation between two variables.
+
+###
+
+###
+
+### Short Answer Questions
+
+- Define a random variable and explain the difference between a discrete and a continuous random variable with an example for each.
+- Explain the concept of conditional probability (P(A|B)) and provide a real-world example to illustrate it.
+- Describe the three main measures of central tendency (mean, median, mode) and provide a scenario where the median would be a more appropriate measure than the mean.
+- What is hypothesis testing? Briefly explain the roles of the null hypothesis (H0), the alternative hypothesis (H1), and the p-value in deciding whether to reject or fail to reject H0.
+- State Bayes' Theorem. Explain its components and provide a simple interpretation of what it helps calculate.
